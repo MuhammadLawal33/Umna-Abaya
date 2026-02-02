@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMNA ABAYA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+ <header class="main-header">
+  <div class="logo">
+    UMNA <span>ABAYA</span>
+  </div>
+
+  <nav class="nav-icons">
+    <a href="#home">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="#about">
+      <i class="fa-solid fa-user"></i>
+      <span>About</span>
+    </a>
+    <a href="#shop">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span>Shop</span>
+    </a>
+    <a href="#contact">
+      <i class="fa-solid fa-phone"></i>
+      <span>Contact</span>
+    </a>
+  </nav>
+</header>
+
+
+
+  <!-- HERO SECTION -->
+ <section class="hero">
+  
+  <!-- Background Video -->
+  <video
+  class="hero-video"
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="auto"
+  poster="img/hero-fallback.jpg">
+  <source src="video/umna-abaya hero video.mp4" type="video/mp4">
+</video>
+
+
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <h1 class="reveal">Welcome to Umna Abaya</h1>
+    <p class="reveal"> 
+      A Curated Collection of Egypt Abayas & Fashion Accessories
+    </p>
+    <a href="#shop" class="btn">Explore Collection</a>
+  </div>
+
+</section>
+
+
+<h2 align="center" style="font-size: 2rem; color: #b57b5c;">About us</h2>
+<br>
+  <!-- ABOUT SECTION -->
+ <section id="about" class="about">
+
+ <!-- About Image -->
+  <img 
+    src="img/Abaya 4.jpeg" 
+    alt="Rahama Saidu Collection Abaya"
+    class="about-image reveal-left"
+  >
+
+
+
+
+  <div class="about-text reveal-right">
+    <h2>About Umna Abaya</h2>
+    <p>
+      Rahama Saidu Collection is a fashion brand dedicated to timeless modest wear 
+      and elegant accessories. We curate high-quality abayas, caps, shoes, and bags 
+      designed to combine comfort, style, and sophistication.
+      <br><br>
+      Our collections are carefully selected to suit modern women who value elegance,
+      confidence, and quality — whether for everyday wear or special occasions.
+      We proudly serve both retail and wholesale customers, delivering fashion pieces
+      that elevate your style with grace.
+    </p>
+  </div>
+
+</section>
+
+
+ <!-- PRODUCTS SECTION (HOMEPAGE) -->
+<section id="shop" class="products">
+  <h2>Our Bestsellers</h2>
+  <div class="product-grid">
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 1.jpeg" alt="abaya">
+      <h3>Elegant Black Egyptian Abaya</h3>
+      <p class="price">₦ 220,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 2.jpeg" alt="abaya">
+      <h3>Classic Modest Abaya Collection</h3>
+      <p class="price">₦ 130,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+      
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 3.jpeg" alt="abaya">
+      <h3>Luxury Everyday Abaya Collection</h3>
+      <p class="price">₦ 130,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 4.jpeg" alt="abaya">
+      <h3>Versatile Elegant Abaya Collection</h3>
+      <p class="price">₦ 210,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="shoes">
+      <img src="img/Abaya 5.jpeg" alt="shoes">
+      <h3>Classic Modest Abaya Collection</h3>
+      <p class="price">₦ 210,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 6.jpeg" alt="abaya">
+      <h3>Versatile Elegant Abaya Collection</h3>
+      <p class="price">₦ 195,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 7.jpeg" alt="abaya">
+      <h3>Versatile Elegant Abaya Collection</h3>
+      <p class="price">₦ 95,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 8.jpeg" alt="abaya">
+      <h3>Versatile Elegant Abaya Collection</h3>
+      <p class="price">₦ 230,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 9.jpeg" alt="abaya">
+      <h3>Versatile Elegant Abaya Collection</h3>
+      <p class="price">₦ 180,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 10.jpeg" alt="abaya">
+      <h3>Versatile Elegant Abaya Collection</h3>
+      <p class="price">₦ 180,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 11.jpeg" alt="abaya">
+      <h3>Versatile Elegant Abaya Collection</h3>
+      <p class="price">₦ 185,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+
+    <div class="product reveal-zoom" data-category="abaya">
+      <img src="img/Abaya 12.jpeg" alt="abaya">
+      <h3>Versatile Elegant Abaya Collection</h3>
+      <p class="price">₦ 170,000</p>
+      <button class="btn" onclick="sendToWhatsApp(this)">Buy Now</button>
+    </div>
+     
+  </div>
+
+  <!-- View More Button -->
+  <div style="margin-top: 40px;">
+    <a href="Abayas.html" class="btn">View All Products</a>
+  </div>
+</section>
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2 class="section-title">Get in Touch</h2>
+
+  <div class="contact-wrapper">
+    <!-- Left: Info & Map -->
+    <div class="contact-info reveal-left">
+      <section id="contact">
+  <p>
+    📍Suite B4 Shakir Plaza, Michika Street,
+Off Ahmadu Bello Way,
+Garki, Abuja, Nigeria
+
+  </p>
+</section>
+
+    <iframe
+  src="https://www.google.com/maps?q=Suite+B4+Shakir+Plaza+Michika+Street+Off+Ahmadu+Bello+Way+Garki+Abuja+Nigeria&output=embed"
+  width="100%"
+  height="400"
+  style="border:0; border-radius:10px;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps?q=Suite+B4+Shakir+Plaza+Michika+Street+Off+Ahmadu+Bello+Way+Garki+Abuja+Nigeria&output=embed"
+    loading="lazy">
+  </iframe>
+</div>
+
+
+    </div>
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-content">
+
+    <div class="footer-brand">
+      <h3>Umna Abaya</h3>
+      <p>Premium Abayas, Caps, Shoes & Fashion Accessories</p>
+    </div>
+
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Umna Abaya. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/2348141169542" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat on WhatsApp">
+   <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
