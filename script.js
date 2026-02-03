@@ -16,16 +16,24 @@
   revealOnScroll(); // run on page load
 
 
-  function sendToWhatsApp(button) {
-    let product = button.parentElement.querySelector("h3").textContent;
-    let price = button.parentElement.querySelector(".price").textContent;
+function sendToWhatsApp(button) {
+  const productCard = button.closest(".product");
 
-    let message = `Hello UMNA ABAYA! I am interested in the "${product}" `;
+  const productName = productCard.querySelector("h3").textContent.trim();
+  const price = productCard.querySelector(".price").textContent.trim();
+  
+  const message = 
+`Hello UMNA ABAYA 
 
-    let url = `https://wa.me/2348141169542?text=${encodeURIComponent(message)}`;
+I am interested in this product:
 
-    window.open(url, "_blank");
-  }
+ Product: ${productName}
+Price: ${price}
 
+Please let me know if it is available.`;
 
+  const phoneNumber = "2348141169542";
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
+  window.open(url, "_blank");
+}
